@@ -39,6 +39,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.17.0  # Versión actualizada compatible
+  cloud_firestore: ^4.13.6
+  firebase_auth_web: ^5.8.13
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

@@ -7,13 +7,15 @@ class EmailList extends StatelessWidget {
 
   final backend = Backend();
 
+  EmailList({super.key});
+
   @override
   Widget build(BuildContext context) {
     final emails = backend.getEmails();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Correos'),
+        title: const Text('Lista de Correos'),
       ),
       body: ListView.builder(
         itemCount: emails.length,

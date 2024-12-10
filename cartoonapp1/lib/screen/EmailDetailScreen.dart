@@ -4,7 +4,7 @@ import 'package:cartoonapp1/email.dart';
 class EmailDetailScreen extends StatelessWidget {
   final Email email;
 
-  EmailDetailScreen({required this.email});
+  const EmailDetailScreen({super.key, required this.email});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +17,10 @@ class EmailDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('From: ${email.from}', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 16),
-            Text('Body:', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 8),
+            Text('From: ${email.from}', style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 16),
+            const Text('Body:', style: TextStyle(fontSize: 18)),
+            const SizedBox(height: 8),
             Text(email.body),
           ],
         ),

@@ -4,7 +4,7 @@ import 'package:cartoon_app/model/character.dart';
 class CharacterWidget extends StatelessWidget {
   final Character character;
 
-  const CharacterWidget({Key? key, required this.character}) : super(key: key);
+  const CharacterWidget({super.key, required this.character});
 
   @override
   Widget build(BuildContext context) {
